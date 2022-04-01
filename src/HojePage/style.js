@@ -6,6 +6,45 @@ width:100%;
 min-height:100vh;
 background-color:#F2F2F2;
 `
+export const Color=styled.p`
+padding-left:5px;
+${(props=>{
+    switch(props.$color){
+        case true:
+            return css`
+             color:#8FC549;
+            `
+        case false:{
+            return css`
+            color:#666666;
+            `
+            
+        }
+    }
+})
+
+}
+`
+
+export const Color2=styled.p`
+margin-left:5px;
+${(props=>{
+    switch(props.$color){
+        case true:
+            return css`
+             color:#8FC549;
+            `
+        case false:{
+            return css`
+            color:#666666;
+            `
+            
+        }
+    }
+})
+
+}
+`
 export const HabitContainer=styled.div`
 margin-top:30px;
 box-sizing:border-box;
@@ -27,15 +66,15 @@ letter-spacing: 0em;
 text-align: left;
 margin-bottom:10px;
 }
-p{
-font-family: Lexend Deca;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0em;
-text-align: left;
-
+.p{
+    display: flex;
+    font-family: Lexend Deca;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 `
 export const VoidText =styled.p`
@@ -86,6 +125,15 @@ color:#126BA5;
 
 .sub-text{
     color:#8FC549;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+
+}
+.sub-text-none{
+    color:#BABABA;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
