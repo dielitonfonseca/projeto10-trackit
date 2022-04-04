@@ -5,7 +5,7 @@ export default function TopBar({image}){
     const navigate = useNavigate();
 
     function sair() {
-        alert("Até breve!");
+        alert("Até logo ;<");
         localStorage.clear();
         navigate("/");
     }

@@ -122,7 +122,7 @@ export default function HabitosPage(){
         return(
             <>
             <HabitContainer>
-            <TopContainer><p>{name}</p>  <ion-icon id={id} onClick={(event)=>{window.confirm("Você quer mesmo  Hábito")&&deleteHabit(event)}} name="trash-outline"></ion-icon></TopContainer>
+            <TopContainer><p>{name}</p>  <ion-icon id={id} onClick={(event)=>{window.confirm("Você quer mesmo excluir este Hábito")&&deleteHabit(event)}} name="trash-outline"></ion-icon></TopContainer>
             
             <Week>
                 {weekDaysbefore.map((items,index)=><Day key={index} $state={items.state} >{items.n}</Day>)}

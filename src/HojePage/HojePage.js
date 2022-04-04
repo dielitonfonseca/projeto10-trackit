@@ -116,7 +116,7 @@ export default function HojePage(){
         <Frame>
             <SubBar>
             <p>{week}, {date}</p> 
-            {percent==0||isNaN(percent)?<p className="sub-text-none">Nenhum Habito concluido ainda</p>: <p className="sub-text">{Math.ceil(percent)}% dos hábitos concluídos</p>}
+            {percent==0||isNaN(percent)?<p className="sub-text-none">Nenhum hábito concluído ainda.</p>: <p className="sub-text">{Math.ceil(percent)}% dos hábitos concluídos</p>}
            </SubBar>
            {habits==null||habits.length==0?<VoidText>Você não tem nenhum hábito cadastrado para hoje. Adicione um hábito para começar a trackear!</VoidText>:habits.map((item,index)=> <Habit key={index} name={item.name} id={item.id} now={item.currentSequence} record={item.highestSequence} done={item.done}/> )}
             
